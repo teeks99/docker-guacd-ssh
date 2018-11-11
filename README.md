@@ -3,7 +3,7 @@ A docker image for guacd that allows SSH connections to mount VNC sessions
 
 You can use this image with docker [similar to the docs](https://guacamole.apache.org/doc/gug/guacamole-docker.html), except adding a ssh port number and adding a ssh config with the crucial `authorized_keys` file:
 
-    docker run --name some-guacd -d -p 4922:22 -v /host/ssh/config_dir:/root/.ssh teeks99/guacd:latest
+    docker run --name some-guacd -d -p 4922:22 -v /host/ssh/config_dir:/root/.ssh teeks99/guacd-ssh:latest
 
 Once the guacd docker instance is running, you can connect the guacamole instance to it, [like normal](https://guacamole.apache.org/doc/gug/guacamole-docker.html#guacamole-docker-guacd).
 
